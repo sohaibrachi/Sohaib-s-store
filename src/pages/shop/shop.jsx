@@ -11,9 +11,12 @@ export const Shop = () => {
       </div>
 
       <div className="products">
-        {PRODUCTS.map((product) => (
-          <Product data={product} />
-        ))}
+        {PRODUCTS.map((product, ) =>{
+          return (
+          
+            <Product data={product} />
+          )
+        })}
       </div>
     </div>
   );

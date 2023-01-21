@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 import { ShopContext } from "../../contexts/shop-context";
 import { PRODUCTS } from "../../products";
 import { CartItem } from "./cart-item";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
+
 
 import "./cart.css";
 export const Cart = () => {
@@ -28,6 +29,7 @@ export const Cart = () => {
         <div className="checkout">
           <p> Subtotal: ${totalAmount} </p>
           <button onClick={() => navigate("/")}> Continue Shopping </button>
+          <Link to="/contact">
           <button
             onClick={() => {
               checkout();
@@ -37,6 +39,7 @@ export const Cart = () => {
             {" "}
             Checkout{" "}
           </button>
+          </Link>
         </div>
       ) : (
         <h1> Your Shopping Cart is Empty</h1>
