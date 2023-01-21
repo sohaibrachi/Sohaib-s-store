@@ -1,3 +1,6 @@
+*{
+
+}
 .shopTitle {
   margin-top: 100px;
   text-align: center;
@@ -14,9 +17,9 @@
 
 .product {
   border-radius: 15px;
-  width: 300px;
+  width: 250px;
   height: 350px;
-  margin: 100px;
+  margin: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,7 +27,7 @@
 }
 
 .product img {
-  width: 400px;
+  width: 300px;
 }
 
 .product .description {
